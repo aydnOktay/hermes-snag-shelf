@@ -2,7 +2,7 @@
 
 name: snag-shelf
 repo: https://github.com/aydnOktay/hermes-snag-shelf
-sha: REPLACE_AFTER_PUSH
+sha: 13eb26719ac7404c3516385ff6a5195ad69cefdd
 description: Everything that snagged - cross-session shelf of failed tool calls.
   Full Desktop page, chip, pin, fix-prompt insert. No API keys.
 maintainer: aydnOktay
