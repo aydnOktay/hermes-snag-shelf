@@ -1,0 +1,24 @@
+name: snag-shelf
+version: 0.1.0
+manifest_version: 1
+api_version: 1
+description: >
+  Everything that snagged — one Desktop shelf of failed Hermes tool calls.
+  Cross-session gallery: tool name, redacted args, error snippet. Pin keepers,
+  insert a fix prompt into chat. Disclosure — stores local failure metadata
+  under plugin-data; does not upload. No API keys.
+author: aydnOktay
+license: MIT
+homepage: https://github.com/aydnOktay/hermes-snag-shelf
+requires_hermes: ">=0.21.5"
+tags: [desktop, failures, tools, gallery, debugging]
+provides_tools:
+  - snag_shelf_list
+  - snag_shelf_clear
+provides_hooks:
+  - post_tool_call
+config_schema:
+  max_items:
+    type: int
+    default: 80
+    description: Maximum snag items kept on disk.
